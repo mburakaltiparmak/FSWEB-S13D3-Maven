@@ -69,6 +69,39 @@ class Person {
     }
 
 }
+class Wall {
+    double width;
+    double height;
+    public Wall (double width,double height) {
+        this.width=width;
+        this.height=height;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setWidth(double width) {
+        if (width <=0) {
+            width = 0;
+        }
+        this.width = width;
+    }
+    public void setHeight(double height) {
+        if (height <=0) {
+            height = 0;
+        }
+        this.height = height;
+    }
+    public double getArea() {
+        return width*height;
+    }
+
+}
 
 public class Main {
     public static void main(String[] args) {
@@ -80,6 +113,18 @@ public class Main {
         System.out.println("Age" + " " + person1.getAge());
         System.out.println(Person.isTeen(person2.getFirstName(), person2.getAge()));
         System.out.println(Person.isTeen("Ali",37));
+        //
+        Wall wall = new Wall(5,4);
+
+        System.out.println("area= " + wall.getArea());
+
+        wall.setHeight(-1.5);
+
+        System.out.println("width= " + wall.getWidth());
+
+        System.out.println("height= " + wall.getHeight());
+
+        System.out.println("area= " + wall.getArea());
 
 
 
