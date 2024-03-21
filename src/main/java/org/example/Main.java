@@ -7,6 +7,7 @@ class Person {
     String job;
     String birthplace;
 
+
 //Constructors (Total : 5 and tried all different parameter combinations with int parameter)
 
     //Constructor 1 (2 String, 1 int)
@@ -55,6 +56,7 @@ class Person {
     public int getAge() {
         return age;
     }
+
     public static boolean isTeen (String firstName,int age) {
         if (age >= 13 && age <= 19 ) {
             System.out.println(firstName + " " + "is teen.");
@@ -76,8 +78,11 @@ public class Main {
         System.out.println("Firstname" + " " + person1.getFirstName());
         System.out.println("Lastname" + " " + person1.getLastName());
         System.out.println("Age" + " " + person1.getAge());
-        System.out.println(Person.isTeen(person3.getFirstName(), person3.getAge()));
+        System.out.println(Person.isTeen(person2.getFirstName(), person2.getAge()));
+        System.out.println(Person.isTeen("Ali",37));
+
 
 
     }
+
 }
