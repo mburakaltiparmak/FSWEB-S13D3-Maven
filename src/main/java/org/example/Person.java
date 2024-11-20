@@ -58,13 +58,11 @@ public class Person {
         return age;
     }
 
-    public static boolean isTeen (String firstName,int age) {
-        if (age >= 13 && age <= 19 ) {
-            System.out.println(firstName + " " + "is teen.");
+    public boolean isTeen () {
+        if (this.age >= 13 && this.age<= 19) {
             return true;
         }
         else {
-            System.out.println(firstName + " " + " isn't teen.");
             return false;
         }
     }

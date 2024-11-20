@@ -9,10 +9,7 @@ public class Main {
         System.out.println("Firstname" + " " + person1.getFirstName());
         System.out.println("Lastname" + " " + person1.getLastName());
         System.out.println("Age" + " " + person1.getAge());
-        System.out.println(person1.isTeen(person1.getFirstName(), person1.getAge()));
-        System.out.println(person2.isTeen(person2.getFirstName(), person2.getAge()));
-        System.out.println(person3.isTeen(person3.getFirstName(), person3.getAge()));
-        System.out.println(person4.isTeen(person4.getFirstName(), person4.getAge()));
+
 
         //
         Wall wall = new Wall(5,4);
